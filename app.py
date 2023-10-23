@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
-
-app = Flask(__name)
+from 2 import primerObjeto
+app = Flask(__name__)
 
 # Datos de ejemplo para simular una lista de objetos
 objects = []

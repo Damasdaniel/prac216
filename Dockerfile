@@ -8,7 +8,7 @@ WORKDIR /app
 COPY app.py .
 
 # Instala Flask
-RUN pip install Flask
+RUN pip install -r requirements.txt
 
 # Expone el puerto 5000
 EXPOSE 5000
