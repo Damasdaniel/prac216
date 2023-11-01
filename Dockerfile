@@ -6,9 +6,10 @@ WORKDIR /app
 
 # Copia el archivo de aplicación al contenedor
 COPY app.py .
+COPY requirements.txt
 
 # Instala Flask
-RUN pip install -r Flask
+RUN pip install -r requirements.txt
 
 # Expone el puerto 5000
 EXPOSE 5000
